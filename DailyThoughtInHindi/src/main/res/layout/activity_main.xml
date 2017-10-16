@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:MyApplication="http://schemas.android.com/apk/res-auto"
+    android:shrinkColumns="*"
+    android:stretchColumns="*"
+    android:background="#ffffff"
+    android:id="@+id/TableDisplay">
+
+    <TextView
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:textSize="24sp" android:text="आज का विचार"  android:layout_span="3"
+        android:padding="18dip" android:background="#FF8C00" android:gravity="center_horizontal"
+        android:textStyle="bold"
+        android:textColor="#ffffff" />
+
+    <EditText
+        android:id="@+id/editTextMobileNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="10 Digit Mobile Number"
+        android:maxLength="10"
+        android:ems="10" >
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/editTextPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:hint="Password" />
+
+    <TableRow
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:gravity="center_horizontal">
+        <Button
+            android:id="@+id/buttonSignIn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign In"
+            android:background="#ffff6c"
+            android:textColor="#FF8C00"/>
+
+        <Button
+            android:id="@+id/buttonSignUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign Up"
+            android:background="#ffff6c"
+            android:textColor="#FF8C00"
+
+            />
+
+    </TableRow>
+
+    <!--<Button
+        android:id="@+id/buttonHeader"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Header" />-->
+
+    <!--<Button
+        android:id="@+id/buttonForgotPassword"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Forgot Password" />-->
+
+</TableLayout>
